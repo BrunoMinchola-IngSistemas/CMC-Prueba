@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CMC Contratistas | Edificación y Obras de Instalaciones</title>
+  <meta name="description" content="CMC Contratistas: edificación residencial, no residencial y obras de instalaciones. Soluciones confiables para proyectos de construcción." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="topbar">
+      <div class="container topbar__content">
+        <span>📞 +51 999 999 999</span>
+        <span>✉️ contacto@cmccontratistas.com</span>
+        <span>📍 Arequipa, Perú</span>
+      </div>
+    </div>
+
+    <nav class="navbar container" aria-label="Navegación principal">
+      <a class="brand" href="#inicio" aria-label="CMC Contratistas inicio">
+        <span class="brand__mark">CMC</span>
+        <span class="brand__text">Contratistas</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a class="btn btn--small" href="#cotizacion">Cotización</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero__overlay"></div>
+      <div class="container hero__content">
+        <p class="eyebrow">Construcción · Edificación · Instalaciones</p>
+        <h1>CMC Contratistas</h1>
+        <p class="hero__lead">Contratista enfocada en edificación residencial, no residencial y obras de instalaciones.</p>
+        <div class="hero__actions">
+          <a class="btn" href="#cotizacion">Solicitar cotización</a>
+          <a class="btn btn--ghost" href="#servicios">Ver servicios</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="nosotros">
+      <div class="container grid grid--2">
+        <div>
+          <p class="eyebrow">Quiénes somos</p>
+          <h2>Soluciones constructivas serias, claras y bien ejecutadas</h2>
+          <p>CMC Contratistas brinda servicios para proyectos de construcción, remodelación, mantenimiento e instalaciones, cuidando la planificación, seguridad y calidad de cada entrega.</p>
+          <p>Trabajamos con enfoque práctico: levantamiento de requerimientos, presupuesto transparente, ejecución ordenada y comunicación constante con el cliente.</p>
+        </div>
+        <div class="stats-card">
+          <div><strong>01</strong><span>Evaluación técnica</span></div>
+          <div><strong>02</strong><span>Presupuesto y alcance</span></div>
+          <div><strong>03</strong><span>Ejecución supervisada</span></div>
+          <div><strong>04</strong><span>Entrega y conformidad</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="servicios">
+      <div class="container">
+        <p class="eyebrow">Servicios</p>
+        <h2>Áreas de trabajo</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Edificación residencial</h3>
+            <p>Construcción, ampliación y remodelación de viviendas, departamentos y espacios habitacionales.</p>
+          </article>
+          <article class="card">
+            <h3>Edificación no residencial</h3>
+            <p>Obras para locales comerciales, oficinas, almacenes, instituciones y espacios corporativos.</p>
+          </article>
+          <article class="card">
+            <h3>Obras de instalaciones</h3>
+            <p>Instalaciones sanitarias, eléctricas, acabados, mantenimiento correctivo y adecuaciones técnicas.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="proyectos">
+      <div class="container">
+        <p class="eyebrow">Proyectos</p>
+        <h2>Trabajos que puede mostrar la empresa</h2>
+        <p class="section__intro">Estos bloques quedan listos para reemplazar por fotos reales. Porque aparentemente una constructora sin fotos es como un casco sin obra: existe, pero no convence.</p>
+        <div class="project-grid">
+          <div class="project"><span>Vivienda multifamiliar</span></div>
+          <div class="project"><span>Remodelación comercial</span></div>
+          <div class="project"><span>Instalaciones interiores</span></div>
+          <div class="project"><span>Acabados y mantenimiento</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote" id="cotizacion">
+      <div class="container quote__box">
+        <div>
+          <p class="eyebrow">Cotización</p>
+          <h2>Cuéntanos qué obra necesitas realizar</h2>
+          <p>Completa el formulario y CMC Contratistas podrá responder con una evaluación inicial.</p>
+        </div>
+        <form class="form" id="quoteForm">
+          <input type="text" name="nombre" placeholder="Nombre completo" required>
+          <input type="tel" name="telefono" placeholder="Teléfono / WhatsApp" required>
+          <input type="email" name="correo" placeholder="Correo electrónico">
+          <select name="servicio" required>
+            <option value="">Tipo de servicio</option>
+            <option>Edificación residencial</option>
+            <option>Edificación no residencial</option>
+            <option>Obras de instalaciones</option>
+            <option>Remodelación / mantenimiento</option>
+          </select>
+          <textarea name="mensaje" rows="4" placeholder="Describe brevemente el proyecto"></textarea>
+          <button class="btn" type="submit">Enviar solicitud</button>
+          <small id="formMessage"></small>
+        </form>
+      </div>
+    </section>
+
+    <section class="section" id="contacto">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">Contacto</p>
+          <h2>Datos de atención</h2>
+          <p><strong>Teléfono:</strong> +51 999 999 999</p>
+          <p><strong>Correo:</strong> contacto@cmccontratistas.com</p>
+          <p><strong>Dirección:</strong> Av. / Calle por confirmar, Arequipa, Perú</p>
+          <p><strong>Horario:</strong> Lunes a sábado, 8:00 a.m. - 6:00 p.m.</p>
+          <a href="libro-reclamaciones.html" class="claim-link">📘 Libro de reclamaciones</a>
+        </div>
+        <div class="map-placeholder">
+          <span>Mapa / ubicación aquí</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__content">
+      <p>© 2026 CMC Contratistas. Todos los derechos reservados.</p>
+      <p>Web informativa corporativa.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

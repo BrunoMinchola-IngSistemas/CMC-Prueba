@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Libro de Reclamaciones | CMC Contratistas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="simple-header">
+    <div class="container simple-header__content">
+      <a class="brand" href="index.html"><span class="brand__mark">CMC</span><span class="brand__text">Contratistas</span></a>
+      <a class="btn btn--small" href="index.html">Volver al inicio</a>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container narrow">
+      <p class="eyebrow">Atención al cliente</p>
+      <h1>Libro de Reclamaciones</h1>
+      <p>Completa tus datos para registrar un reclamo o queja. Este formulario queda preparado para conectarse luego a correo, WhatsApp o backend.</p>
+
+      <form class="form claim-form" id="claimForm">
+        <input type="text" placeholder="Nombre completo" required>
+        <input type="text" placeholder="DNI / CE" required>
+        <input type="email" placeholder="Correo electrónico" required>
+        <input type="tel" placeholder="Teléfono" required>
+        <select required>
+          <option value="">Tipo</option>
+          <option>Reclamo</option>
+          <option>Queja</option>
+        </select>
+        <textarea rows="5" placeholder="Detalle del reclamo o queja" required></textarea>
+        <textarea rows="3" placeholder="Pedido del consumidor" required></textarea>
+        <label class="check"><input type="checkbox" required> Declaro que la información registrada es verdadera.</label>
+        <button class="btn" type="submit">Registrar</button>
+        <small id="claimMessage"></small>
+      </form>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
